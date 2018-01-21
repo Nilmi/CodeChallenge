@@ -9,14 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">34,085</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">43,849</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">CodeChallenge.WebChallenge.WebChallenge</td><td><a href="#m0">test2</a></td><td rowspan="1">1516545957285</td><td rowspan="1">10533</td></tr><tr class="failedeven"><td><a href="#m1">test3</a></td><td rowspan="1">1516545967823</td><td rowspan="1">239</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">CodeChallenge.WebChallenge.WebChallenge</td><td><a href="#m2">test1</a></td><td rowspan="1">1516545945407</td><td rowspan="1">11874</td></tr><tr class="passedeven"><td><a href="#m3">test4</a></td><td rowspan="1">1516545968064</td><td rowspan="1">185</td></tr><tr class="passedeven"><td><a href="#m4">test5</a></td><td rowspan="1">1516545968250</td><td rowspan="1">74</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">CodeChallenge.WebChallenge.WebChallenge</td><td><a href="#m0">test2</a></td><td rowspan="1">1516555273182</td><td rowspan="1">10200</td></tr><tr class="failedeven"><td><a href="#m1">test3</a></td><td rowspan="1">1516555283388</td><td rowspan="1">300</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">CodeChallenge.WebChallenge.WebChallenge</td><td><a href="#m2">test1</a></td><td rowspan="1">1516555253348</td><td rowspan="1">19829</td></tr><tr class="passedeven"><td><a href="#m3">test4</a></td><td rowspan="1">1516555283690</td><td rowspan="1">240</td></tr><tr class="passedeven"><td><a href="#m4">test5</a></td><td rowspan="1">1516555283931</td><td rowspan="1">55</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">CodeChallenge.WebChallenge.WebChallenge#test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: xpath_mainImage (tried for 10 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at CodeChallenge.WebChallenge.WebChallenge.test2(WebChallenge.java:102)
+	at CodeChallenge.WebChallenge.WebChallenge.test2(WebChallenge.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,7 +58,7 @@ Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 26 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">CodeChallenge.WebChallenge.WebChallenge#test3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;media-heading &quot;&gt;...&lt;/div&gt; is not clickable at point (300, 616). Other element would receive the click: &lt;a class=&quot;block-link&quot; href=&quot;/world/europe/europe-readies-riposte-to-trumps-america-first-push-in-davos&quot; title=&quot;Europe readies riposte to Trump&apos;s &apos;America First&apos; push in Davos&quot;&gt;&lt;/a&gt;
+<h3 id="m1">CodeChallenge.WebChallenge.WebChallenge#test3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;media-heading &quot;&gt;...&lt;/div&gt; is not clickable at point (300, 621). Other element would receive the click: &lt;a class=&quot;block-link&quot; href=&quot;/world/europe/europe-readies-riposte-to-trumps-america-first-push-in-davos&quot; title=&quot;Europe readies riposte to Trump&apos;s &apos;America First&apos; push in Davos&quot;&gt;&lt;/a&gt;
   (Session info: chrome=63.0.3239.132)
   (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -66,7 +66,7 @@ Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: 
 System info: host: &apos;Nilmis-MacBook-Pro.local&apos;, ip: &apos;2402:4000:bbfe:3657:c8f:fff3:2a99:2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522932 (4140ab217e1ca1..., userDataDir: /var/folders/63/qfwfx1sd5tj...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: fc90f60ddc5c14c399e3bfbb87d94dc6
+Session ID: 6771e91298a8675d7cf482c6a258035a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -81,7 +81,7 @@ Session ID: fc90f60ddc5c14c399e3bfbb87d94dc6
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at CodeChallenge.WebChallenge.WebChallenge.test3(WebChallenge.java:125)
+	at CodeChallenge.WebChallenge.WebChallenge.test3(WebChallenge.java:119)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

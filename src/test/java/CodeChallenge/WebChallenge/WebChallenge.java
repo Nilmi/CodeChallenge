@@ -29,9 +29,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 
 public class WebChallenge {
-	WebDriver driver;
-	Properties properties;
-	WebDriverWait wait;
+	private WebDriver driver;
+	private Properties properties;
+	private WebDriverWait wait;
 	
   @Test (priority = 1)
 public void test1() throws IOException {
@@ -49,7 +49,7 @@ public void test1() throws IOException {
 	  driver.switchTo().frame(driver.findElement(By.xpath(xpath_ad)));
 	  driver.findElement(By.xpath(xpath_adClose)).click();
 	  
-	  //switch back to defaut content
+	  //switch back to default content
 	  driver.switchTo().defaultContent();
 	  System.out.println(driver.getTitle());
 	  
@@ -68,12 +68,7 @@ public void test1() throws IOException {
 	  //wait until logged user link is clickable
 	  wait = new WebDriverWait(driver, 20);
 	  wait.until(ExpectedConditions.elementToBeClickable(By.linkText(email)));
-//		try {
-//			Thread.sleep(3000);
-//		} catch (InterruptedException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
+
 	  
 	  //verify whether user has been logged in successfully
 	  if (driver.findElement(By.linkText(email)).getText().equals(email)){
@@ -83,12 +78,6 @@ public void test1() throws IOException {
 		  System.out.println("User login failed");  
 	  }
 	  
-//	  try {
-//		Thread.sleep(3000);
-//	} catch (InterruptedException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}	  
   }
   
   @Test (priority = 2)

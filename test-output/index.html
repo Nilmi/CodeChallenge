@@ -160,7 +160,7 @@
                   <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: xpath_mainImage (tried for 10 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at CodeChallenge.WebChallenge.WebChallenge.test2(WebChallenge.java:102)
+	at CodeChallenge.WebChallenge.WebChallenge.test2(WebChallenge.java:96)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,7 +210,7 @@ Driver info: driver.version: unknown
                   <a name="test3">
                   </a> <!-- test3 -->
                   <span class="method-name">test3</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;media-heading &quot;&gt;...&lt;/div&gt; is not clickable at point (300, 616). Other element would receive the click: &lt;a class=&quot;block-link&quot; href=&quot;/world/europe/europe-readies-riposte-to-trumps-america-first-push-in-davos&quot; title=&quot;Europe readies riposte to Trump&apos;s &apos;America First&apos; push in Davos&quot;&gt;&lt;/a&gt;
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;div class=&quot;media-heading &quot;&gt;...&lt;/div&gt; is not clickable at point (300, 621). Other element would receive the click: &lt;a class=&quot;block-link&quot; href=&quot;/world/europe/europe-readies-riposte-to-trumps-america-first-push-in-davos&quot; title=&quot;Europe readies riposte to Trump&apos;s &apos;America First&apos; push in Davos&quot;&gt;&lt;/a&gt;
   (Session info: chrome=63.0.3239.132)
   (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -218,7 +218,7 @@ Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: 
 System info: host: &apos;Nilmis-MacBook-Pro.local&apos;, ip: &apos;2402:4000:bbfe:3657:c8f:fff3:2a99:2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.2&apos;, java.version: &apos;9.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522932 (4140ab217e1ca1..., userDataDir: /var/folders/63/qfwfx1sd5tj...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: fc90f60ddc5c14c399e3bfbb87d94dc6
+Session ID: 6771e91298a8675d7cf482c6a258035a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -233,7 +233,7 @@ Session ID: fc90f60ddc5c14c399e3bfbb87d94dc6
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at CodeChallenge.WebChallenge.WebChallenge.test3(WebChallenge.java:125)
+	at CodeChallenge.WebChallenge.WebChallenge.test3(WebChallenge.java:119)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -297,7 +297,7 @@ Session ID: fc90f60ddc5c14c399e3bfbb87d94dc6
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/63/qfwfx1sd5tjdk0wz8vc3srbm0000gn/T/testng-eclipse--429455624/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/63/qfwfx1sd5tjdk0wz8vc3srbm0000gn/T/testng-eclipse--1734660240/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -350,28 +350,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'CodeChallenge.WebChallenge.WebChallenge')
-data.setCell(0, 3, 11874);
+data.setCell(0, 3, 19829);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test2')
 data.setCell(1, 2, 'CodeChallenge.WebChallenge.WebChallenge')
-data.setCell(1, 3, 10533);
+data.setCell(1, 3, 10200);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test3')
 data.setCell(2, 2, 'CodeChallenge.WebChallenge.WebChallenge')
-data.setCell(2, 3, 239);
+data.setCell(2, 3, 300);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test4')
 data.setCell(3, 2, 'CodeChallenge.WebChallenge.WebChallenge')
-data.setCell(3, 3, 185);
+data.setCell(3, 3, 240);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test5')
 data.setCell(4, 2, 'CodeChallenge.WebChallenge.WebChallenge')
-data.setCell(4, 3, 74);
+data.setCell(4, 3, 55);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -404,31 +404,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">11025 ms</span>
+                <span class="method-start">13069 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test2</span>
-                <span class="method-start">22903 ms</span>
+                <span class="method-start">32903 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test3</span>
-                <span class="method-start">33441 ms</span>
+                <span class="method-start">43109 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test4</span>
-                <span class="method-start">33682 ms</span>
+                <span class="method-start">43411 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test5</span>
-                <span class="method-start">33868 ms</span>
+                <span class="method-start">43652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">33943 ms</span>
+                <span class="method-start">43708 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
