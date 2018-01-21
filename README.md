@@ -10,3 +10,11 @@ Steps of Web Verification:
 6. Click on the main article
 7. Verify that the page has been navigated to the main article, and the picture/video is present in the article.
 
+### Technologies used:
+1. Selenium WebDriver with Java
+2. TestNG
+3. CSS selectors and xpaths
+4. Maven
+5. GIT
+
+
