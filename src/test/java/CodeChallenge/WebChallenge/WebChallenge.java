@@ -32,8 +32,12 @@ public class WebChallenge {
 	private WebDriver driver;
 	private Properties properties;
 	private WebDriverWait wait;
-	
-  @Test (priority = 1)
+
+/*Test Step 1:
+ * Read xpaths and test case data from properties file -> close the ad -> click on login ->
+ * enter username and password -> click continue -> verify login
+ */
+@Test (priority = 1)
 public void test1() throws IOException {
 	  //reads the xpaths and test data from properties file
 	  properties = readProperties();
@@ -79,7 +83,10 @@ public void test1() throws IOException {
 	  }
 	  
   }
-  
+ 
+/*Test Step 2:
+ * Read xpaths from properties file -> Verify main article image presence
+ */
   @Test (priority = 2)
   public void test2() throws IOException {
 	  
@@ -100,7 +107,11 @@ public void test1() throws IOException {
 		e.printStackTrace();
 	}
   }
-  
+ 
+  /*Test Step 3:
+   * Read xpaths and test case data from properties file -> go to main article 
+   * -> verify heading of main article
+   */
   @Test (priority = 3)
   public void test3() throws IOException{
 	  
@@ -112,12 +123,11 @@ public void test1() throws IOException {
 	  //take the main article heading to a variable and click on main article
 	  String heading = driver.findElement(By.xpath(xpath_mainArticleHeading)).getText();
 	  driver.findElement(By.xpath(xpath_mainArticleHeading)).click();
-
 	  
 	System.out.println(heading);
 	System.out.println(driver.getTitle());
 	
-	//verify the article
+	//verify the article heading
 	if (driver.getTitle().contains(heading)){
 		System.out.println("Successfully navigate to main article");
 	}
@@ -127,6 +137,10 @@ public void test1() throws IOException {
 	
   }
   
+  /*Test Step 4:
+   * Read xpaths from properties file  
+   * -> verify heading of main image presence
+   */
   @Test (priority = 4)
   public void test4() throws IOException {
 	  //read properties file and takes the xpath main article image
@@ -144,7 +158,11 @@ public void test1() throws IOException {
     	  System.out.println("Image not displayed");
       }
       }
-  
+
+  /*Test Step 5:
+   * Read xpaths from properties file 
+   * -> verify video presence in main article
+   */
   @Test (priority = 5)
   public void test5() throws IOException {
 	  //read xpaths from property file
@@ -184,6 +202,7 @@ public void test1() throws IOException {
 	    }
 	}
   
+  //reads from properties file
   public Properties readProperties() throws IOException {
 	  //this method can be used to read testcondtion values from config.properties file
 	  properties = new Properties();
@@ -193,7 +212,7 @@ public void test1() throws IOException {
   }
   
   
-  
+// runs before test, launch browser and go to url  
   @BeforeTest
   public void beforeTest() throws IOException {
 	  //read the brower, url values from config.properties file
@@ -204,7 +223,7 @@ public void test1() throws IOException {
 	  //Launch driver	  
 	  if (browserName.equals("Chrome")) {
 		  System.setProperty("webdriver.chrome.driver", "/Users/nilmi/Documents/SPH/chromedriver");
-		   driver = new ChromeDriver();		  //driver.get("http://google.com");
+		   driver = new ChromeDriver();		  
 	  }
 	  else if(browserName.equals("FireFox")) {
 		  System.setProperty("webdriver.gecko.driver", "/Users/nilmi/Documents/SPH/geckodriver");
